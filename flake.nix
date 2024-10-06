@@ -8,6 +8,7 @@
       forAllSystems = import ./forAllSystems.nix;
       extendPyPkgsWith = import ./extendPyPkgsWith.nix;
       pyDevShell = import ./pyDevShell.nix;
+      mkApps = import ./mkApps.nix;
       mkPyFlake = (import ./mkPyFlake.nix) { inherit nixpkgs forAllSystems; };
     };
   };
